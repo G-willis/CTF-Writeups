@@ -1,0 +1,13 @@
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/temp files
+*.swp
+*.swo
+*.tmp
+
+# Others
+*.pcap
+*.key
+secrets.*
