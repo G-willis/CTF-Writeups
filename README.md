@@ -13,6 +13,6 @@ Skills: PowerShell enumeration, scripting, credential discovery, privilege escal
 Result: User and SYSTEM obtained (flags redacted)  
 Summary: Focused on PowerShell built-in cmdlets and scripts for host enumeration, credential discovery, and post-exploitation. Found credentials in a script/config, leveraged them for lateral movement and escalated to SYSTEM via a vulnerable service.  
 TryHackMe room:  ## 🔗 Room Link
-[TryHackMe: PowerShell](https://tryhackme.com/room/powershell?sharerId=6883d6a80aba1c8c9c8f670b)
+https://tryhackme.com/room/windowspowershell?reveal=share
 
 Full writeup: `rooms/powershell-room/README.md`
