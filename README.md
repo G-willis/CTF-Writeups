@@ -28,7 +28,7 @@ TryHackMe room:https://tryhackme.com/room/pentestingfundamentals?sharerId=6883d6
  Principles of Security — TryHackMe
  
 Date: 2025-10-18  
-Difficulty: Beginner  
+Difficulty: Medium 
 Skills: CIA triad (Confidentiality, Integrity, Availability), risk management, security controls, encryption basics, authentication concepts  
 Result: Room completed — learned foundational security principles and how they apply to real-world systems  
 Summary:Introduced the core pillars of information security and their importance in designing secure systems. Covered risk analysis, types of security controls (preventive, detective, corrective), encryption principles, authentication mechanisms, and the balance between usability and security.  
