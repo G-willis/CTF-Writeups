@@ -12,7 +12,14 @@ Difficulty: Medium
 Skills: PowerShell enumeration, scripting, credential discovery, privilege escalation techniques on Windows (PowerShell-based)  
 Result: User and SYSTEM obtained (flags redacted)  
 Summary: Focused on PowerShell built-in cmdlets and scripts for host enumeration, credential discovery, and post-exploitation. Found credentials in a script/config, leveraged them for lateral movement and escalated to SYSTEM via a vulnerable service.  
-TryHackMe room:  ## 🔗 Room Link
-https://tryhackme.com/room/windowspowershell?reveal=share
+TryHackMe room: https://tryhackme.com/room/windowspowershell?reveal=share
 
-Full writeup: `rooms/powershell-room/README.md`
+ Pentesting Fundamentals — TryHackMe
+Date: 2025-10-18  
+Difficulty: Beginner  
+Skills: Pentesting methodology, reconnaissance, scanning & enumeration (Nmap), basic exploitation concepts, reporting and documentation  
+Result: Room completed — core pentesting workflow and tools practiced (no flags).  
+Summary: Covered the full penetration-testing lifecycle (reconnaissance → scanning → exploitation → post-exploitation → reporting). Practiced active/passive information gathering, port/service enumeration with Nmap, basic network tooling (Netcat, WHOIS), and learned how to structure findings into professional reports while following ethical and legal boundaries.  
+TryHackMe room:https://tryhackme.com/room/pentestingfundamentals?sharerId=6883d6a80aba1c8c9c8f670b
+
+
