@@ -12,5 +12,7 @@ Difficulty: Medium
 Skills: PowerShell enumeration, scripting, credential discovery, privilege escalation techniques on Windows (PowerShell-based)  
 Result: User and SYSTEM obtained (flags redacted)  
 Summary: Focused on PowerShell built-in cmdlets and scripts for host enumeration, credential discovery, and post-exploitation. Found credentials in a script/config, leveraged them for lateral movement and escalated to SYSTEM via a vulnerable service.  
-TryHackMe room: https://tryhackme.com/room/<room-slug>  
+TryHackMe room:  ## 🔗 Room Link
+https://tryhackme.com/room/windowspowershell?reveal=share
+
 Full writeup: `rooms/powershell-room/README.md`
