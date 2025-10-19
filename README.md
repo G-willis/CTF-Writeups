@@ -34,3 +34,12 @@ Result: Room completed — learned foundational security principles and how they
 Summary:Introduced the core pillars of information security and their importance in designing secure systems. Covered risk analysis, types of security controls (preventive, detective, corrective), encryption principles, authentication mechanisms, and the balance between usability and security.  
 TryHackMe room:https://tryhackme.com/room/principlesofsecurity?sharerId=6883d6a80aba1c8c9c8f670b
 
+ Metasploit — TryHackMe
+
+Date: 2025-10-20  
+Difficulty: Medium  
+Skills: Exploit development basics, Metasploit framework usage (modules, payloads, listeners), post-exploitation techniques, payload staging and handler management  
+Result: Gained hands-on experience using Metasploit for scanning, exploiting known vulnerabilities, and managing sessions
+Summary: Practiced using Metasploit to discover and exploit vulnerable services, delivered payloads, and interacted with Meterpreter sessions for post-exploitation tasks. Learned module selection, payload options, handler setup, and basic post-exploit commands.  
+TryHackMe room: https://tryhackme.com/room/metasploitintro?sharerId=6883d6a80aba1c8c9c8f670b
+
